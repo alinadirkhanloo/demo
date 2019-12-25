@@ -12,6 +12,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
+import { MapComponent } from './charts/map/map.component';
+import { WordCloudComponent } from './charts/word-cloud/word-cloud.component';
+import { PureComponent } from './charts/pure/pure.component';
+import { PieComponent } from './charts/pie/pie.component';
+import { ChartsModule } from 'ng2-charts';
 
 
 @NgModule({
@@ -22,12 +27,17 @@ import { ComponentsModule } from './components/components.module';
     ComponentsModule,
     NgbModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ChartsModule
   ],
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    AuthLayoutComponent
+    AuthLayoutComponent,
+    MapComponent,
+    WordCloudComponent,
+    PureComponent,
+    PieComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

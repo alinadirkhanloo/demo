@@ -5,8 +5,15 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
+import { MapComponent } from './charts/map/map.component';
+import { PureComponent } from './charts/pure/pure.component';
+import { WordCloudComponent } from './charts/word-cloud/word-cloud.component';
+import { PieComponent } from './charts/pie/pie.component';
 
 const routes: Routes =[
+  {
+    path: 'map',component:PieComponent
+  },
   {
     path: '',
     redirectTo: 'dashboard',
